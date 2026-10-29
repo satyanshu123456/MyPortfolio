@@ -31,13 +31,12 @@ const FallbackHeroArt = () => {
         <div className="absolute w-1/2 h-1/2 rounded-full border border-purple-500/50" />
 
         {/* Center Stylized Developer Emblem */}
-        <div className="w-24 h-24 rounded-2xl bg-gradient-to-tr from-cyan-400 to-indigo-600 p-0.5 shadow-neon-accent">
-          <div className="w-full h-full bg-[#080B14] rounded-2xl flex flex-col items-center justify-center">
-            <span className="font-heading font-black text-3xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
-              S.D
-            </span>
-            <span className="text-[9px] font-mono text-cyan-300 mt-1">MERN</span>
-          </div>
+        <div className="relative w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-amber-400 via-cyan-400 to-indigo-600 shadow-neon-accent">
+          <img
+            src="/logo.png"
+            alt="SATYANSHU.DEV Emblem"
+            className="w-full h-full rounded-full object-cover bg-slate-900 border border-amber-400/50"
+          />
         </div>
       </div>
     </div>

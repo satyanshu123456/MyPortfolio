@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { Menu, X, Terminal, Sparkles } from 'lucide-react';
+import { Menu, X, Sparkles } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
 const navItems = [
@@ -54,10 +54,13 @@ export const Navbar = () => {
             className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-cyan-400 rounded-lg p-1"
             aria-label="SATYANSHU.DEV Home"
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-400 to-indigo-600 p-0.5 shadow-neon-accent group-hover:scale-105 transition-transform duration-300 flex items-center justify-center">
-              <div className="w-full h-full bg-[#080B14] rounded-[10px] flex items-center justify-center">
-                <Terminal className="w-4 h-4 text-cyan-400 group-hover:rotate-6 transition-transform" />
-              </div>
+            <div className="relative group-hover:scale-105 transition-transform duration-300">
+              <div className="absolute -inset-0.5 bg-gradient-to-tr from-amber-400 via-cyan-400 to-indigo-500 rounded-full blur-[2px] opacity-75 group-hover:opacity-100 transition duration-300" />
+              <img
+                src="/logo.png"
+                alt="SATYANSHU.DEV Logo"
+                className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover border border-amber-400/50 shadow-neon-accent bg-slate-900"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-heading font-bold text-lg tracking-wider text-slate-100 group-hover:text-cyan-400 transition-colors">

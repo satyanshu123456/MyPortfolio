@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Heart, Sparkles, Terminal } from 'lucide-react';
+import { MapPin, Heart, Sparkles } from 'lucide-react';
 import SocialLinks from './SocialLinks';
 
 export const Footer = () => {
@@ -14,10 +14,13 @@ export const Footer = () => {
           {/* Brand Info */}
           <div className="md:col-span-2 space-y-3">
             <Link to="/" className="inline-flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-400 to-indigo-600 p-0.5 flex items-center justify-center">
-                <div className="w-full h-full bg-[#080B14] rounded-[6px] flex items-center justify-center">
-                  <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-                </div>
+              <div className="relative shrink-0">
+                <div className="absolute -inset-0.5 bg-gradient-to-tr from-amber-400 via-cyan-400 to-indigo-500 rounded-full blur-[2px] opacity-75" />
+                <img
+                  src="/logo.png"
+                  alt="SATYANSHU.DEV Logo"
+                  className="relative w-9 h-9 rounded-full object-cover border border-amber-400/50 shadow-md bg-slate-900"
+                />
               </div>
               <span className="font-heading font-bold text-xl tracking-wider text-slate-100">
                 SATYANSHU<span className="text-cyan-400">.DEV</span>

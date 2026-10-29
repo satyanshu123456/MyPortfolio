@@ -6,6 +6,7 @@
   :root {
     --bg-color: #080B14;
     --text-color: #F8FAFC;
+    --heading-color: #FFFFFF;
     --card-bg: rgba(15, 23, 42, 0.75);
     --card-border: rgba(99, 102, 241, 0.2);
     --glow-color: rgba(34, 211, 238, 0.25);
@@ -13,9 +14,10 @@
 
   .light {
     --bg-color: #F8FAFC;
-    --text-color: #0F172A;
-    --card-bg: rgba(255, 255, 255, 0.85);
-    --card-border: rgba(99, 102, 241, 0.2);
+    --text-color: #1E293B;
+    --heading-color: #0F172A;
+    --card-bg: #FFFFFF;
+    --card-border: #E2E8F0;
     --glow-color: rgba(99, 102, 241, 0.15);
   }
 
@@ -25,10 +27,12 @@
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
     min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    color: var(--heading-color);
   }
 }
 
@@ -58,7 +62,7 @@
   background: #6366F1;
 }
 
-/* Glassmorphism Styles */
+/* Glassmorphism Styles - Dark */
 .glass-panel {
   background: rgba(15, 23, 42, 0.75);
   backdrop-filter: blur(16px);
@@ -66,22 +70,8 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.light .glass-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(15, 23, 42, 0.08);
-}
-
 .glass-nav {
   background: rgba(8, 11, 20, 0.82);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(99, 102, 241, 0.15);
-}
-
-.light .glass-nav {
-  background: rgba(248, 250, 252, 0.88);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(99, 102, 241, 0.15);
@@ -93,13 +83,6 @@
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(99, 102, 241, 0.2);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.light .glass-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(241, 245, 249, 0.8) 100%);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
 .glass-card:hover {
@@ -119,6 +102,190 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* =========================================================================
+   PREMIUM LIGHT MODE DESIGN SYSTEM & CONTRAST ENHANCEMENTS
+   ========================================================================= */
+
+.light {
+  color-scheme: light;
+}
+
+/* High-Contrast Typography */
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6,
+.light .text-white {
+  color: #0F172A !important;
+}
+
+.light .text-slate-100 {
+  color: #0F172A !important;
+}
+
+.light .text-slate-200 {
+  color: #1E293B !important;
+}
+
+.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+.light .text-slate-400 {
+  color: #64748B !important;
+}
+
+.light .text-slate-500 {
+  color: #94A3B8 !important;
+}
+
+/* Vibrant Light Mode Gradients */
+.light .text-gradient {
+  background: linear-gradient(135deg, #0284C7 0%, #4F46E5 50%, #7C3AED 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.light .text-cyan-400,
+.light .text-cyan-300 {
+  color: #0284C7 !important;
+}
+
+.light .text-indigo-400,
+.light .text-indigo-300 {
+  color: #4F46E5 !important;
+}
+
+/* Clean White & Crisp Glass Panels */
+.light .glass-panel {
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.03) !important;
+}
+
+.light .glass-nav {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Luxury White Cards with Soft Shadows */
+.light .glass-card {
+  background: #FFFFFF !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03) !important;
+}
+
+.light .glass-card:hover {
+  border-color: #6366F1 !important;
+  box-shadow: 0 16px 32px -4px rgba(99, 102, 241, 0.14), 0 4px 8px -2px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Slate Dark Background Overrides for Light Mode */
+.light .bg-slate-900,
+.light .bg-slate-900\/40,
+.light .bg-slate-900\/60,
+.light .bg-slate-900\/80,
+.light .bg-slate-900\/90 {
+  background-color: #F8FAFC !important;
+}
+
+.light .bg-slate-950,
+.light .bg-slate-950\/30,
+.light .bg-slate-950\/40 {
+  background-color: #F1F5F9 !important;
+}
+
+.light .bg-slate-800,
+.light .bg-slate-800\/60,
+.light .bg-slate-800\/80 {
+  background-color: #F1F5F9 !important;
+}
+
+.light .border-slate-800,
+.light .border-slate-800\/60,
+.light .border-slate-800\/80,
+.light .border-slate-700,
+.light .border-slate-700\/60,
+.light .border-slate-700\/80 {
+  border-color: #E2E8F0 !important;
+}
+
+/* Status Pills & Technology Badges in Light Mode */
+.light .bg-cyan-950\/40,
+.light .bg-cyan-950\/60,
+.light .bg-cyan-950\/80 {
+  background-color: #E0F2FE !important;
+  color: #0369A1 !important;
+  border-color: #BAE6FD !important;
+}
+
+.light .bg-indigo-950\/40,
+.light .bg-indigo-950\/50,
+.light .bg-indigo-950\/60 {
+  background-color: #EEF2FF !important;
+  color: #4338CA !important;
+  border-color: #C7D2FE !important;
+}
+
+.light .bg-amber-950\/20,
+.light .bg-amber-950\/60,
+.light .bg-amber-500\/10 {
+  background-color: #FEF3C7 !important;
+  color: #B45309 !important;
+  border-color: #FDE68A !important;
+}
+
+.light .text-amber-300,
+.light .text-amber-400 {
+  color: #B45309 !important;
+}
+
+/* Clean Form Inputs in Light Mode */
+.light input,
+.light textarea {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+.light input:focus,
+.light textarea:focus {
+  border-color: #6366F1 !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2) !important;
+}
+
+/* Secondary CTA Buttons & Links */
+.light a.border-slate-700,
+.light button.border-slate-700 {
+  background-color: #FFFFFF !important;
+  color: #1E293B !important;
+  border-color: #CBD5E1 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.light a.border-slate-700:hover,
+.light button.border-slate-700:hover {
+  background-color: #F8FAFC !important;
+  color: #4F46E5 !important;
+  border-color: #818CF8 !important;
+}
+
+/* Footer Contrast */
+.light footer {
+  background: #F8FAFC !important;
+  border-top-color: #E2E8F0 !important;
+}
+
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
@@ -128,4 +295,3 @@
     scroll-behavior: auto !important;
   }
 }
-

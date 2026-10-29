@@ -13,7 +13,7 @@ export const MainLayout = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-slate-100 relative overflow-x-hidden transition-colors duration-300">
+    <div className="min-h-screen flex flex-col bg-background relative overflow-x-hidden transition-colors duration-300">
       {/* Desktop Custom Cursor */}
       <CustomCursor />
 
