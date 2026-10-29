@@ -9,6 +9,7 @@ import {
   ArrowRight,
   Briefcase,
   CheckCircle,
+  Award,
 } from 'lucide-react';
 import BackToHome from '../components/BackToHome';
 import PageTransition from '../components/PageTransition';
@@ -68,17 +69,33 @@ const timelineMilestones = [
     id: 'education',
     year: '2022 - 2026',
     title: 'B.Tech in Computer Science Engineering (AIML)',
-    subtitle: 'Lakshmi Narain College of Technology Excellence, Bhopal',
-    type: 'Formal Academic Education',
+    subtitle: 'Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV) & LNCT Excellence, Bhopal',
+    type: 'Undergraduate Degree',
     icon: GraduationCap,
     accentColor: '#10B981',
     description:
-      'Pursuing Bachelor of Technology with specialization in Artificial Intelligence and Machine Learning. Building rigorous theoretical and practical foundations in computing.',
+      'Pursuing Bachelor of Technology with specialization in Artificial Intelligence and Machine Learning (Current CGPA: 6.71). Building rigorous theoretical and practical foundations in computing.',
     highlights: [
+      'Graduation CGPA: 6.71 (Class of 2026)',
       'Data Structures & Algorithms (DSA)',
       'Database Management Systems (DBMS) & SQL/NoSQL',
-      'Object-Oriented Programming (OOP) concepts',
-      'Operating Systems & Computer Networks basics',
+      'Artificial Intelligence & Machine Learning foundations',
+    ],
+  },
+  {
+    id: 'schooling',
+    year: 'Secondary & Higher Sec.',
+    title: '10th & 12th Grade Academic Foundation',
+    subtitle: 'Govt. Excellence Venkat No. 1, Satna, MP',
+    type: 'School Education',
+    icon: Award,
+    accentColor: '#F59E0B',
+    description:
+      'Completed secondary and higher secondary schooling with excellence. Secured 87.75% in 10th Grade and 70.2% in 12th Grade (Science Stream).',
+    highlights: [
+      '10th Grade: 87.75% High Academic Distinction',
+      '12th Grade: 70.2% Science Stream Completion',
+      'Consistent analytical and quantitative academic performance',
     ],
   },
 ];

@@ -18,7 +18,10 @@ A production-grade, futuristic personal portfolio website engineered for **Satya
 - **Tagline:** *"Turning Ideas Into Interactive Digital Experiences."*
 - **Supporting Vision:** *"I build modern, responsive web applications and enjoy turning creative ideas into practical digital experiences."*
 - **Location:** Bhopal, Madhya Pradesh, India
-- **Education:** B.Tech in Computer Science Engineering (AIML), Lakshmi Narain College of Technology Excellence, Bhopal (Graduation: 2026)
+- **Education:** 
+  - **B.Tech in CSE (AIML):** Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV) / LNCT Excellence, Bhopal (CGPA: 6.71, Class of 2026)
+  - **12th Grade (Higher Secondary):** Govt. Excellence Venkat No. 1, Satna, MP (70.2%)
+  - **10th Grade (Secondary):** Govt. Excellence Venkat No. 1, Satna, MP (87.75%)
 - **Professional Experience:** Fresher (Passionate Self-Directed Learner & Project Builder)
 - **Email:** [satyanshugautam6@gmail.com](mailto:satyanshugautam6@gmail.com)
 - **GitHub:** [https://github.com/satyanshu123456](https://github.com/satyanshu123456)

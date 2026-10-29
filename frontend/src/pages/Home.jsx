@@ -254,11 +254,11 @@ export const Home = () => {
                 </h2>
 
                 <p className="text-sm text-slate-300 leading-relaxed max-w-2xl">
-                  B.Tech Computer Science Engineering (AIML) student at{' '}
+                  B.Tech in Computer Science Engineering (AIML) from{' '}
                   <strong className="text-white">
-                    Lakshmi Narain College of Technology Excellence, Bhopal
+                    Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Bhopal
                   </strong>{' '}
-                  (Graduating 2026). Dedicated to building full-stack web applications with React, Node.js, Express, and MongoDB.
+                  (LNCT Excellence, Class of 2026, 6.71 CGPA). Dedicated to building modern full-stack web applications with React, Node.js, Express, and MongoDB.
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2">
