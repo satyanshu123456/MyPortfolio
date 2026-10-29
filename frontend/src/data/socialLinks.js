@@ -58,7 +58,7 @@ export const developerInfo = {
       cgpa: '6.71',
       graduationYear: 2026,
       batch: '2022 - 2026',
-      status: 'Pursuing (Class of 2026)',
+      status: 'Completed (Class of 2026)',
     },
     seniorSecondary: {
       standard: '12th Grade (Higher Secondary Certificate)',

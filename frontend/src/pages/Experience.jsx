@@ -74,7 +74,7 @@ const timelineMilestones = [
     icon: GraduationCap,
     accentColor: '#10B981',
     description:
-      'Pursuing Bachelor of Technology with specialization in Artificial Intelligence and Machine Learning (Current CGPA: 6.71). Building rigorous theoretical and practical foundations in computing.',
+      'Completed Bachelor of Technology with specialization in Artificial Intelligence and Machine Learning (CGPA: 6.71). Built rigorous theoretical and practical foundations in computing.',
     highlights: [
       'Graduation CGPA: 6.71 (Class of 2026)',
       'Data Structures & Algorithms (DSA)',
