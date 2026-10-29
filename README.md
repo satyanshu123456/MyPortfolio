@@ -37,8 +37,8 @@ A production-grade, futuristic personal portfolio website engineered for **Satya
    - Independent routes managed with React Router DOM:
      - `/` — Interactive 3D Hero, Core Focus Pillars, and CTAs
      - `/about` — Biography, Education Card, and Career Aspirations
-     - `/skills` — Categorized core competencies (Frontend, Backend, Database, Tools)
-     - `/projects` — Interactive project roadmap cards with transparent "Coming Soon" badges
+     - `/skills` — Interactive skill cards with official SVG brand logos and full-featured slide tour popup modal
+     - `/projects` — Live Google AI Studio applications with launch links, active working mode projects, and roadmap cards
      - `/experience` — Fresher milestone timeline (Education, MERN stack journey, practice)
      - `/contact` — Production contact form with MongoDB persistence and Nodemailer alerts
      - `*` — Custom 404 cyberspace route
@@ -104,9 +104,11 @@ personalPort/
 │   │   │   ├── BackToHome.jsx    # Inner page return navigation
 │   │   │   ├── SocialLinks.jsx   # Accessible verified social icons
 │   │   │   ├── ProjectCard.jsx   # 3D tilted glassmorphism project card
+│   │   │   ├── SkillLogos.jsx    # Crisp vector brand logos for all 12 skills
+│   │   │   ├── SkillSlideModal.jsx# Interactive slide popup tour with keyboard navigation
 │   │   │   └── PageTransition.jsx# Framer Motion page wrapper
 │   │   ├── data/                 # Strictly verified developer data
-│   │   │   ├── projects.js       # Planned projects (TaskFlow, CareerConnect, ChatSphere)
+│   │   │   ├── projects.js       # Live AI Studio tools (PDF Translator AI, DocuConvert) & MERN apps (Cravings, Mingo ChatApp)
 │   │   │   ├── skills.js         # Verified MERN stack skills
 │   │   │   └── socialLinks.js    # Developer biography & socials
 │   │   ├── layouts/
