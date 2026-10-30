@@ -3,16 +3,11 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Rocket,
-  Info,
   ArrowRight,
   Sparkles,
   Bot,
   Layers,
   Activity,
-  CheckCircle2,
-  ExternalLink,
-  ShieldCheck,
-  Zap,
 } from 'lucide-react';
 import BackToHome from '../components/BackToHome';
 import ProjectCard from '../components/ProjectCard';

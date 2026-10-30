@@ -11,6 +11,9 @@ import {
   AtSign,
   MessageSquare,
   Sparkles,
+  Phone,
+  FileText,
+  Download,
 } from 'lucide-react';
 import BackToHome from '../components/BackToHome';
 import SocialLinks from '../components/SocialLinks';
@@ -149,7 +152,7 @@ export const Contact = () => {
                 I am based in Bhopal, MP, India, and open to remote, hybrid, or on-site developer roles.
               </p>
 
-              <div className="space-y-5">
+              <div className="space-y-4">
                 {/* Email Item */}
                 <div className="flex items-start gap-3.5">
                   <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
@@ -166,6 +169,22 @@ export const Contact = () => {
                   </div>
                 </div>
 
+                {/* Phone Item */}
+                <div className="flex items-start gap-3.5">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs font-mono text-slate-400 block">Direct Phone</span>
+                    <a
+                      href={`tel:${developerInfo.phone || '+919179010652'}`}
+                      className="text-sm font-semibold text-slate-200 hover:text-emerald-400 transition-colors"
+                    >
+                      {developerInfo.phone || '+91-9179010652'}
+                    </a>
+                  </div>
+                </div>
+
                 {/* Location Item */}
                 <div className="flex items-start gap-3.5">
                   <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
@@ -176,6 +195,35 @@ export const Contact = () => {
                     <span className="text-sm font-semibold text-slate-200">
                       {developerInfo.location}
                     </span>
+                  </div>
+                </div>
+
+                {/* Resume Item */}
+                <div className="flex items-start gap-3.5 pt-2 border-t border-slate-800/80">
+                  <div className="w-10 h-10 rounded-xl bg-cyan-950/60 border border-cyan-500/40 flex items-center justify-center text-cyan-300 shrink-0 shadow-sm">
+                    <FileText className="w-5 h-5 text-cyan-400" />
+                  </div>
+                  <div className="flex-1">
+                    <span className="text-xs font-mono text-slate-400 block">Curriculum Vitae</span>
+                    <div className="flex items-center gap-3 pt-0.5">
+                      <a
+                        href="/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-heading font-bold text-cyan-400 hover:text-cyan-300 underline"
+                      >
+                        View Resume (PDF) ↗
+                      </a>
+                      <span className="text-slate-600">•</span>
+                      <a
+                        href="/Satyanshu_Gautam_Resume.pdf"
+                        download="Satyanshu_Gautam_Resume.pdf"
+                        className="text-xs font-heading font-semibold text-slate-300 hover:text-white flex items-center gap-1"
+                      >
+                        <Download className="w-3 h-3 text-cyan-400" />
+                        <span>Download</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

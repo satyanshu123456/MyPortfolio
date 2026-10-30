@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import {
   GraduationCap,
   MapPin,
-  Calendar,
   Compass,
   ArrowRight,
   Code2,
@@ -15,6 +14,10 @@ import {
   BookOpen,
   School,
   CheckCircle2,
+  FileText,
+  Download,
+  ShieldCheck,
+  Trophy,
 } from 'lucide-react';
 import BackToHome from '../components/BackToHome';
 import SocialLinks from '../components/SocialLinks';
@@ -22,7 +25,7 @@ import PageTransition from '../components/PageTransition';
 import { developerInfo } from '../data/socialLinks';
 
 export const About = () => {
-  const { education } = developerInfo;
+  const { education, certifications = [] } = developerInfo;
 
   return (
     <PageTransition>
@@ -88,30 +91,158 @@ export const About = () => {
               </p>
 
               {/* Profiles & Socials */}
-              <div className="pt-2 flex flex-wrap items-center gap-4">
+              <div className="pt-2 flex flex-wrap items-center gap-3">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-heading font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-cyan-300 hover:from-cyan-300 hover:to-white transition-all shadow-neon-accent"
+                >
+                  <FileText className="w-3.5 h-3.5" />
+                  <span>View Resume</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+
+                <a
+                  href="/Satyanshu_Gautam_Resume.pdf"
+                  download="Satyanshu_Gautam_Resume.pdf"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-mono font-medium text-cyan-300 bg-cyan-950/60 hover:bg-cyan-500/20 border border-cyan-500/40 transition-colors"
+                >
+                  <Download className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>Download PDF</span>
+                </a>
+
                 <SocialLinks size="md" />
+
                 <a
                   href="https://github.com/satyanshu123456"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-mono text-slate-200 bg-slate-800/80 hover:bg-slate-700 border border-slate-700 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-mono text-slate-200 bg-slate-800/80 hover:bg-slate-700 border border-slate-700 transition-colors"
                 >
-                  <span>View GitHub</span>
+                  <span>GitHub</span>
                   <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
                 </a>
+
                 <a
                   href="https://www.linkedin.com/in/satyanshu-gautam-33a149254"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-mono text-slate-200 bg-slate-800/80 hover:bg-slate-700 border border-slate-700 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-mono text-slate-200 bg-slate-800/80 hover:bg-slate-700 border border-slate-700 transition-colors"
                 >
-                  <span>View LinkedIn</span>
+                  <span>LinkedIn</span>
                   <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
                 </a>
               </div>
             </div>
           </div>
         </div>
+
+        {/* RESUME & CREDENTIALS SPOTLIGHT SECTION */}
+        <section className="mb-14">
+          <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-cyan-500/30 shadow-neon-accent relative overflow-hidden">
+            <div className="absolute -top-24 -right-24 w-60 h-60 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              {/* Document Mockup Preview Box */}
+              <div className="lg:col-span-5 flex flex-col justify-between p-5 rounded-2xl bg-slate-950/70 border border-slate-800">
+                {/* Mockup Top Header */}
+                <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-800/80">
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
+                  </div>
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-cyan-400 font-bold px-2 py-0.5 rounded bg-cyan-950/80 border border-cyan-800/60">
+                    PDF • 1 Page • 128 KB
+                  </span>
+                </div>
+
+                <div className="space-y-2 py-2">
+                  <div className="flex items-center gap-2 text-white font-heading font-bold text-lg">
+                    <FileText className="w-5 h-5 text-cyan-400" />
+                    <span>Satyanshu Gautam</span>
+                  </div>
+                  <p className="text-xs font-mono text-cyan-300">
+                    MERN Stack Developer • Graduating 2026
+                  </p>
+                  <p className="text-xs text-slate-400 leading-relaxed pt-1">
+                    Verified curriculum vitae featuring full-stack engineering milestones, production projects (Cravings, Mingo ChatApp), and industry certifications.
+                  </p>
+                </div>
+
+                {/* Direct Action Buttons */}
+                <div className="pt-4 mt-2 border-t border-slate-800/80 flex flex-wrap gap-2.5">
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs font-heading font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-cyan-300 hover:from-cyan-300 hover:to-white transition-all shadow-neon-accent"
+                  >
+                    <span>View Resume</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+
+                  <a
+                    href="/Satyanshu_Gautam_Resume.pdf"
+                    download="Satyanshu_Gautam_Resume.pdf"
+                    className="inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs font-mono font-medium text-slate-200 bg-slate-900 hover:bg-slate-800 border border-slate-700 transition-colors"
+                  >
+                    <Download className="w-3.5 h-3.5 text-cyan-400" />
+                    <span>Download</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* Verified Certifications & Hackathons from Resume */}
+              <div className="lg:col-span-7 space-y-4">
+                <div className="flex items-center gap-2">
+                  <Trophy className="w-4 h-4 text-amber-400" />
+                  <span className="text-xs font-mono uppercase tracking-wider text-slate-300 font-semibold">
+                    Awards & Certified Accreditations
+                  </span>
+                </div>
+
+                <div className="space-y-3">
+                  {certifications.map((cert) => (
+                    <div
+                      key={cert.id}
+                      className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 transition-colors flex items-start gap-3.5"
+                    >
+                      <div
+                        className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border mt-0.5"
+                        style={{
+                          backgroundColor: `${cert.accentColor}15`,
+                          borderColor: `${cert.accentColor}40`,
+                          color: cert.accentColor,
+                        }}
+                      >
+                        <Award className="w-5 h-5" />
+                      </div>
+
+                      <div className="space-y-1 flex-1">
+                        <div className="flex items-center justify-between gap-2 flex-wrap">
+                          <h4 className="font-heading font-bold text-sm text-white">
+                            {cert.title}
+                          </h4>
+                          <span className="text-[10px] font-mono text-cyan-400 px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40">
+                            {cert.year}
+                          </span>
+                        </div>
+                        <p className="text-xs font-medium text-indigo-300">
+                          {cert.issuer}
+                        </p>
+                        <p className="text-xs text-slate-300 leading-relaxed pt-0.5">
+                          {cert.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* EDUCATIONAL BACKGROUND SECTION */}
         <section className="mb-14">

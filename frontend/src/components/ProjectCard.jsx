@@ -9,8 +9,6 @@ import {
   Globe,
   Lock,
   Zap,
-  Layers,
-  Cpu,
   ArrowUpRight,
 } from 'lucide-react';
 

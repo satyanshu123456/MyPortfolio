@@ -9,10 +9,11 @@ import {
   Sparkles,
   Send,
   MapPin,
-  GraduationCap,
   Box,
   User,
   ShieldCheck,
+  FileText,
+  Download,
 } from 'lucide-react';
 import HeroScene from '../scenes/HeroScene';
 import SocialLinks from '../components/SocialLinks';
@@ -84,7 +85,7 @@ export const Home = () => {
               </p>
 
               {/* Call-to-Actions */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center gap-3.5 pt-2">
                 <Link
                   to="/projects"
                   className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-sm text-slate-900 bg-gradient-to-r from-cyan-400 to-cyan-300 hover:from-cyan-300 hover:to-white shadow-neon-accent hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 group focus:outline-none focus:ring-2 focus:ring-cyan-400 font-heading font-bold"
@@ -93,9 +94,21 @@ export const Home = () => {
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
 
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-medium text-sm text-cyan-300 border border-cyan-500/40 hover:border-cyan-400 bg-cyan-950/40 hover:bg-cyan-500/20 backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 group focus:outline-none focus:ring-2 focus:ring-cyan-400 font-heading font-bold shadow-sm"
+                  title="View & Download Resume PDF"
+                >
+                  <FileText className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
+                  <span>Resume (PDF)</span>
+                  <Download className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100" />
+                </a>
+
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-sm text-slate-200 border border-slate-700 hover:border-cyan-400/50 bg-slate-900/60 hover:bg-slate-800/80 backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 group focus:outline-none focus:ring-2 focus:ring-indigo-400 font-heading font-bold"
+                  className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-medium text-sm text-slate-200 border border-slate-700 hover:border-cyan-400/50 bg-slate-900/60 hover:bg-slate-800/80 backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 group focus:outline-none focus:ring-2 focus:ring-indigo-400 font-heading font-bold"
                 >
                   <Send className="w-4 h-4 text-cyan-400 transition-transform group-hover:rotate-12" />
                   <span>Contact Me</span>
@@ -269,6 +282,16 @@ export const Home = () => {
                     <span>Read Full Story</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
+
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-heading font-semibold text-cyan-300 border border-cyan-500/40 bg-cyan-950/40 hover:bg-cyan-500/20 transition-colors"
+                  >
+                    <FileText className="w-3.5 h-3.5 text-cyan-400" />
+                    <span>Download CV</span>
+                  </a>
 
                   <Link
                     to="/contact"

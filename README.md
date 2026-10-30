@@ -18,10 +18,17 @@ A production-grade, futuristic personal portfolio website engineered for **Satya
 - **Tagline:** *"Turning Ideas Into Interactive Digital Experiences."*
 - **Supporting Vision:** *"I build modern, responsive web applications and enjoy turning creative ideas into practical digital experiences."*
 - **Location:** Bhopal, Madhya Pradesh, India
+- **Phone:** `+91-9179010652`
+- **Email:** [satyanshugautam6@gmail.com](mailto:satyanshugautam6@gmail.com)
+- **Resume:** [PDF Download / View](./frontend/public/resume.pdf)
 - **Education:** 
   - **B.Tech in CSE (AIML):** Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV) / LNCT Excellence, Bhopal (CGPA: 6.71, Class of 2026)
   - **12th Grade (Higher Secondary):** Govt. Excellence Venkat No. 1, Satna, MP (70.2%)
   - **10th Grade (Secondary):** Govt. Excellence Venkat No. 1, Satna, MP (87.75%)
+- **Awards & Certifications:**
+  - **CyberOps Associate:** Cisco Networking Academy and NIIT Foundation (2026)
+  - **Web Design and Development:** NSDC and Skill India Digital Hub (2026)
+  - **HackInMotion Hackathon:** RICR and SAGE University (2026)
 - **Professional Experience:** Fresher (Passionate Self-Directed Learner & Project Builder)
 - **Email:** [satyanshugautam6@gmail.com](mailto:satyanshugautam6@gmail.com)
 - **GitHub:** [https://github.com/satyanshu123456](https://github.com/satyanshu123456)
@@ -93,7 +100,10 @@ A production-grade, futuristic personal portfolio website engineered for **Satya
 personalPort/
 ├── frontend/
 │   ├── public/
-│   │   └── favicon.svg           # Custom neon developer logo
+│   │   ├── favicon.svg           # Custom neon developer logo
+│   │   ├── logo.png              # Golden metallic SG emblem
+│   │   ├── profile.jpg           # Professional portrait photo
+│   │   └── resume.pdf            # Satyanshu Gautam Official Resume (PDF)
 │   ├── src/
 │   │   ├── components/           # Reusable UI components
 │   │   │   ├── Navbar.jsx        # Persistent header with mobile drawer

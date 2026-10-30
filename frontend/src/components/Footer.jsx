@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Heart, Sparkles } from 'lucide-react';
+import { MapPin, Heart } from 'lucide-react';
 import SocialLinks from './SocialLinks';
 
 export const Footer = () => {
@@ -58,6 +58,17 @@ export const Footer = () => {
               </li>
               <li>
                 <Link to="/contact" className="hover:text-cyan-300 transition-colors">Contact</Link>
+              </li>
+              <li className="pt-1">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1 transition-colors"
+                >
+                  <span>Resume (PDF)</span>
+                  <span className="text-xs">↗</span>
+                </a>
               </li>
             </ul>
           </div>

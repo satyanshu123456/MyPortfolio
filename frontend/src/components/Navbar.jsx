@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Sparkles, FileText, Download } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
 const navItems = [
@@ -96,8 +96,21 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          {/* Right Action: Theme Toggle & Mobile Hamburger */}
-          <div className="flex items-center gap-3">
+          {/* Right Action: Resume, Theme Toggle & Mobile Hamburger */}
+          <div className="flex items-center gap-2.5">
+            {/* Desktop Resume Button */}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-heading font-bold text-cyan-300 bg-cyan-950/60 hover:bg-cyan-500/20 border border-cyan-500/40 hover:border-cyan-400 transition-all shadow-sm group"
+              title="View & Download Satyanshu Gautam's Resume (PDF)"
+            >
+              <FileText className="w-3.5 h-3.5 text-cyan-400 group-hover:scale-110 transition-transform" />
+              <span>Resume</span>
+              <Download className="w-3 h-3 text-cyan-300 opacity-70 group-hover:opacity-100" />
+            </a>
+
             <ThemeToggle />
 
             {/* Mobile Hamburger Button */}
@@ -137,6 +150,20 @@ export const Navbar = () => {
                 </span>
               </NavLink>
             ))}
+
+            {/* Mobile Resume Link */}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 px-4 py-2.5 rounded-xl text-sm font-heading font-bold text-cyan-300 bg-cyan-950/60 border border-cyan-500/40 hover:bg-cyan-500/20 transition-colors flex items-center justify-between"
+            >
+              <span className="flex items-center gap-2">
+                <FileText className="w-4 h-4 text-cyan-400" />
+                <span>Download Resume (PDF)</span>
+              </span>
+              <Download className="w-4 h-4 text-cyan-400" />
+            </a>
           </nav>
         </div>
       )}

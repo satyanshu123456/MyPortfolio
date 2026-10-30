@@ -44,21 +44,24 @@ export const developerInfo = {
   fullName: 'Satyanshu Gautam',
   brandName: 'SATYANSHU.DEV',
   role: 'MERN Stack Developer',
+  phone: '+91-9179010652',
+  email: 'satyanshugautam6@gmail.com',
+  resumeUrl: '/resume.pdf',
+  resumeDownloadName: 'Satyanshu_Gautam_Resume.pdf',
   tagline: 'Turning Ideas Into Interactive Digital Experiences.',
   supportingText:
-    'I build modern, responsive web applications and enjoy turning creative ideas into practical digital experiences.',
+    'Passionate and results-driven MERN Stack Developer with hands-on experience in building scalable, responsive, and full-stack web applications using MongoDB, Express.js, React, and Node.js.',
   location: 'Bhopal, Madhya Pradesh, India',
-  email: 'satyanshugautam6@gmail.com',
   education: {
     graduation: {
-      degree: 'B.Tech in Computer Science Engineering (AIML)',
+      degree: 'B.Tech in Computer Science and Engineering (AIML)',
       university: 'Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)',
       college: 'Lakshmi Narain College of Technology Excellence',
       location: 'Bhopal, Madhya Pradesh',
       cgpa: '6.71',
       graduationYear: 2026,
       batch: '2022 - 2026',
-      status: 'Completed (Class of 2026)',
+      status: 'Graduated (Class of 2026)',
     },
     seniorSecondary: {
       standard: '12th Grade (Higher Secondary Certificate)',
@@ -72,13 +75,42 @@ export const developerInfo = {
       location: 'Satna, Madhya Pradesh',
       percentage: '87.75%',
     },
-    degree: 'B.Tech in Computer Science Engineering (AIML)',
+    degree: 'B.Tech in Computer Science and Engineering (AIML)',
     college: 'Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, MP (LNCT Excellence)',
     graduationYear: 2026,
     cgpa: '6.71',
   },
+  certifications: [
+    {
+      id: 'cyberops',
+      title: 'CyberOps Associate',
+      issuer: 'Cisco Networking Academy and NIIT Foundation',
+      year: '2026',
+      accentColor: '#22D3EE',
+      description:
+        'Gained proficiency in security monitoring, threat detection, network vulnerabilities, and incident response operations.',
+    },
+    {
+      id: 'web-dev',
+      title: 'Web Design and Development',
+      issuer: 'NSDC and Skill India Digital Hub',
+      year: '2026',
+      accentColor: '#6366F1',
+      description:
+        'Complete hands-on skilling in core web architecture, frontend layout design, and responsive interface workflows.',
+    },
+    {
+      id: 'hackathon',
+      title: 'HackInMotion Hackathon',
+      issuer: 'RICR and SAGE University',
+      year: '2026',
+      accentColor: '#10B981',
+      description:
+        'Built a prototype under the "Career and Job Tech" track, applying rapid full-stack problem-solving and collaborative development within strict deadlines.',
+    },
+  ],
   experience: 'Fresher',
-  bio: `Hi, I'm Satyanshu Gautam, a Computer Science graduate and aspiring MERN Stack Developer. I enjoy building modern, responsive web applications using JavaScript, React, Node.js, and MongoDB. I'm passionate about improving my development skills, solving problems through code, and creating meaningful digital experiences.`,
+  bio: `Passionate and results-driven MERN Stack Developer with hands-on project experience in building scalable, responsive, and full-stack web applications using MongoDB, Express.js, React, and Node.js. Proficient in designing clean RESTful APIs, implementing user authentication, and managing modern databases. Eager to bring strong problem-solving skills and a collaborative approach to a dynamic engineering team.`,
 };
 
 export default socialLinks;

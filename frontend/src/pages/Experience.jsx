@@ -10,6 +10,7 @@ import {
   Briefcase,
   CheckCircle,
   Award,
+  FileText,
 } from 'lucide-react';
 import BackToHome from '../components/BackToHome';
 import PageTransition from '../components/PageTransition';
@@ -80,6 +81,22 @@ const timelineMilestones = [
       'Data Structures & Algorithms (DSA)',
       'Database Management Systems (DBMS) & SQL/NoSQL',
       'Artificial Intelligence & Machine Learning foundations',
+    ],
+  },
+  {
+    id: 'certifications',
+    year: '2026',
+    title: 'Industry Certifications & Hackathon Accreditations',
+    subtitle: 'Cisco Networking Academy, NSDC Skill India & RICR/SAGE University',
+    type: 'Accredited Credentials',
+    icon: Award,
+    accentColor: '#06B6D4',
+    description:
+      'Completed industry-grade skilling in cybersecurity, full-stack web engineering, and competitive prototype development.',
+    highlights: [
+      'CyberOps Associate (Cisco Networking Academy & NIIT Foundation): Security monitoring & incident response',
+      'Web Design & Development (NSDC & Skill India Digital Hub): Core web architecture & responsive design',
+      'HackInMotion Hackathon (RICR & SAGE University): Prototype under Career & Job Tech track',
     ],
   },
   {
@@ -215,13 +232,24 @@ export const Experience = () => {
               I'd love to discuss how I can bring value to your engineering team.
             </p>
           </div>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-heading font-bold text-sm text-slate-900 bg-cyan-400 hover:bg-cyan-300 transition-colors shadow-neon-accent shrink-0"
-          >
-            <span>Contact Satyanshu</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 shrink-0">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-heading font-semibold text-xs sm:text-sm text-cyan-300 border border-cyan-500/40 bg-cyan-950/40 hover:bg-cyan-500/20 transition-colors shadow-sm"
+            >
+              <FileText className="w-4 h-4 text-cyan-400" />
+              <span>Resume (PDF)</span>
+            </a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-heading font-bold text-sm text-slate-900 bg-cyan-400 hover:bg-cyan-300 transition-colors shadow-neon-accent"
+            >
+              <span>Contact Satyanshu</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </div>
     </PageTransition>
